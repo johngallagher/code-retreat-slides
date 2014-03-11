@@ -13,13 +13,14 @@
 
       h1,h2,h3,h4,strong { color: rgba(255, 92, 0, 0.59); }
       h1 { font-size: 4em; } 
-      h2 { font-size: 2em; } 
+      h2 { font-size: 2em; margin-top: 0; } 
       h3 { font-size: 1em; padding-top: 4em; } 
       h4 { font-size: 1em; margin: 0 0 1em 0;} 
 
       ol, ul, li { text-align: left; }
       .mono p { text-align: left; font-family: 'Inconsolata'; font-size: 0.7em; }
       .heading_with_text p { font-size: 1.3em; }
+      .session { margin-top: 1.5em; }
 
       table { 
         margin: 0 auto; margin-top: 2em;
@@ -60,11 +61,23 @@
   <div class="slide" id="z-2-today"><div class="heading_with_text"><section><header>
       <h2>Today</h2>
       <p>The point of a <strong>code retreat</strong> is <strong>not</strong> to make progress on the problem.</p>
-      <p> The point is to write <strong>perfect code</strong>!</p>
+      <p>The point is to <strong>experiment</strong> without pressure, and write <strong>good code</strong>!</p>
+   </header></section></div></div>
+  <div class="slide" id="z-2aa-format"><div class="heading_with_text"><section><header>
+      <h2>Format of each session</h2>
+      <ol>
+        <li>45 minutes coding</li>
+        <li>10 minutes retrospective</li>
+        <li>5 minutes break</li>
+      </ol>
+   </header></section></div></div>
+
+  <div class="slide" id="z-2aa-deleteme"><div class="heading"><section><header>
+      <p style="padding-top: 5em;">Delete the code after each session</p>
    </header></section></div></div>
 
   <div class="slide" id="z-2a-session1"><div class="heading"><section><header>
-      <h2>Session #1</h2> <p>Get to know the problem</p>
+      <h2 class="session">Session #1</h2> <p>Get to know the problem</p>
    </header></section></div></div>
 
    <div class="slide cover" id="z-3-conways"><div class="heading"><section><header><h2 style="color: white; padding-top: 1.5em">Conway's Game of Life</h2><img src="conway.gif" style="background-color: white" alt=""></header></section></div></div>
@@ -172,7 +185,7 @@
    </header></section></div></div>
 
   <div class="slide" id="z-5a-rulesrecap"><div class="heading_with_text"><section><header>
-      <h2 style="margin-top: 0;">Conway's Game of Life</h2>
+      <h2>Conway's Game of Life</h2>
       <ol>
         <li>Any <strong>live</strong> cell with <strong>fewer than two</strong> live neighbours dies, as if caused by under-population.</li>
         <li>Any <strong>live</strong> cell with <strong>two or three</strong> live neighbours lives on to the next generation.</li>
@@ -182,7 +195,7 @@
    </header></section></div></div>
 
   <div class="slide" id="z-6a-session2"><div class="heading"><section><header>
-      <h2>Session #2</h2> <p>Ping-Pong TDD</p>
+      <h2 class="session">Session #2</h2> <p>Ping-Pong TDD</p>
    </header></section></div></div>
    <div class="slide cover" id="z-6b-tdd"><div class="heading"><section><header><img src="red-green-refactor.png" style="background-color: white" alt=""></header></section></div></div>
   <div class="slide" id="z-6c-pingpong"><div class="heading_with_text"><section><header>
@@ -195,7 +208,7 @@
       </ol>
    </header></section></div></div>
 
-  <div class="slide" id="z-7a-session3"><div class="heading"><section><header> <h2>Session #3</h2> <p>Extreme Normal Form</p>
+  <div class="slide" id="z-7a-session3"><div class="heading"><section><header> <h2 class="session">Session #3</h2> <p>Extreme Normal Form</p>
    </header></section></div></div>
   <div class="slide" id="z-7b-explanation"><div class="heading_with_text"><section><header>
       <h2>Extreme Normal Form</h2>
@@ -208,7 +221,7 @@
    </header></section></div></div>
 
   <div class="slide" id="z-8a-session4"><div class="heading"><section><header>
-      <h2>Session #4</h2> <p>Mute Evil Programmer</p>
+      <h2 class="session">Session #4</h2> <p>Mute Evil Programmer</p>
    </header></section></div></div>
   <div class="slide" id="z-8b-explanation"><div class="heading_with_text"><section><header>
       <h2>Mute Evil Programmer</h2>
@@ -220,14 +233,14 @@
    </header></section></div></div>
 
   <div class="slide" id="z-9a-session5"><div class="heading"><section><header>
-      <h2>Session #5</h2> <p>Tell don’t Ask</p>
+      <h2 class="session">Session #5</h2> <p>Tell don’t Ask</p>
    </header></section></div></div>
   <div class="slide" id="z-9b-explanation"><div class="heading_with_text"><section><header>
-      <p style="padding-top: 4em;">No function should have a return value</p>
+      <p style="padding-top: 5em;">No function should have a return value</p>
    </header></section></div></div>
 
   <div class="slide" id="z-10a-session6"><div class="heading"><section><header>
-      <h2>Session #6</h2> <p>Freestyle</p>
+      <h2 class="session">Session #6</h2> <p>Freestyle</p>
    </header></section></div></div>
   <div class="slide" id="z-10b-explanation"><div class="heading_with_text"><section><header>
       <h2>Freestyle</h2>
