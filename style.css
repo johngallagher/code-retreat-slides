@@ -4,9 +4,6 @@
 	Licensed under MIT license: https://github.com/pepelsbey/shower/wiki/License
 */
 
-@import url(fonts.css);
-@import url(reset.css);
-
 BODY {
 	font:25px/1.8 'PT Sans', sans-serif;
 	counter-reset:paging;
@@ -29,7 +26,6 @@ BODY {
 		right:120px;
 		width:40px;
 		height:120px;
-		background:url(../images/ribbon.svg) no-repeat;
 		content:'';
 		}
 

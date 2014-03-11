@@ -5,18 +5,167 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=1274, user-scalable=no">
 	<link rel="stylesheet" href="style.css">	
+  <!--
 	<link href='http://fonts.googleapis.com/css?family=Rambla' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+  -->
 	<style>
 	    p {font-family: 'Rambla', sans-serif;}
 		  h2 { text-align:center;	font-size:70px; font-family: 'Rambla', sans-serif;	}		
       p.small {font-size:75%}
+      .mono p { font-family: 'Inconsolata'; font-size: 0.7em; }
+      p.mono_head { text-align: center; letter-spacing: 1px; } 
+      .heading_with_text p { font-size: 1.3em; }
+      .heading h1 { font-size: 4em; text-align: center; } 
+      .heading h2 { font-size: 2em; text-align: center; padding-top: 1em; } 
+      .heading h3 { font-size: 1em; text-align: center; padding-top: 4em; } 
+      .heading p { text-align: center; } 
+      .conway { text-align: center; margin: 0 auto; margin-top: 2em; }
+      .conway tr td { padding: 1em; }
+      .conway tr td.live { background-color: black; }
+      table { box-shadow: 1px 1px 1px #999; }
 	</style>
+
 </head>
 <body class="list">
 	<header class="caption"><h1>Code Retreat</h1><p>Joe Wright</p></header>
 	
-  <div class="slide" id="talkstart"><div><section><header><h1 style="font-size: 4em; text-align: center;">Code Retreat</h1><p>Joe Wright / Calba <span style="float: right">@joe_jag</span></p></header></section></div></div>
-  <div class="slide" id="talk15"><div><section><header><h1 style="font-size: 3em; text-align: center; letter-spacing: 1px">Go Go Go Go!</h1></header></section></div></div>
+  <div class="slide" id="talkstart"><div class="heading"><section><header><h1>Code Retreat</h1><p>Joe Wright<span style="float: right">@joe_jag</span></p></header></section></div></div>
+
+  <div class="slide" id="z-1-schedule"><div><section><header>
+      <p class="mono_head">Schedule</p>
+      <div class="mono"> 
+      <p>  09.00 - 09.30am: Arrival, Introduction
+      <br/>
+      <br/>09.30 - 10.15am: Session #1
+      <br/>10.30 - 10.15am: Session #2
+      <br/>11.30 - 12.15am: Session #3
+      <br/>
+      <br/>12.15 - 01.30pm: Lunch, socializing
+      <br/>
+      <br/>01.30 - 02.15pm: Session #4
+      <br/>02.30 - 03.15pm: Session #5
+      <br/>03.30 - 04.15pm: Session #6
+      <br/>
+      <br/>04.15 - 04:30pm: Closing circle
+      </p>
+      </div>
+   </header></section></div></div>
+
+  <div class="slide" id="z-2-today"><div class="heading_with_text"><section><header>
+      <h2>Today</h2>
+      <p>The point of a code retreat is not to make progress on the problem. The point is to write perfect code!</p
+   </header></section></div></div>
+
+  <div class="slide" id="z-2a-session1"><div class="heading"><section><header>
+      <h2>Session #1</h2>
+      <p>Get to know the problem</p>
+   </header></section></div></div>
+
+   <div class="slide cover" id="z-3-conways"><div class="heading"><section><header><h2 style="color: white">Conway's Game of Life</h2><img src="conway.gif" style="background-color: white" alt=""></header></section></div></div>
+
+  <div class="slide" id="z-4-rules-1a"><div><section><header>
+      <p class="mono_head">Rules</p>
+      <div> 
+        1. Any live cell with fewer than two live neighbours dies, as if caused by under-population.
+        <table border=1 class="conway">
+          <tr> <td></td> <td></td> <td></td> </tr>
+          <tr> <td></td> <td class="live"></td> <td></td> </tr>
+          <tr> <td></td> <td></td> <td></td> </tr>
+        </table>
+      </div>
+   </header></section></div></div>
+  <div class="slide" id="z-4-rules-1b"><div><section><header>
+      <p class="mono_head">Rules</p>
+      <div> 
+        1. Any live cell with fewer than two live neighbours dies, as if caused by under-population.
+        <table border=1 class="conway">
+          <tr> <td></td> <td></td> <td></td> </tr>
+          <tr> <td></td> <td></td> <td></td> </tr>
+          <tr> <td></td> <td></td> <td></td> </tr>
+        </table>
+      </div>
+   </header></section></div></div>
+
+  <div class="slide" id="z-4-rules-2a"><div><section><header>
+      <p class="mono_head">Rules</p>
+      <div> 
+        2. Any live cell with two or three live neighbours lives on to the next generation.
+        <table border=1 class="conway">
+          <tr> <td class="live"></td> <td></td> <td></td> </tr>
+          <tr> <td></td> <td class="live"></td> <td></td> </tr>
+          <tr> <td class="live"></td> <td></td> <td></td> </tr>
+        </table>
+      </div>
+   </header></section></div></div>
+  <div class="slide" id="z-4-rules-2b"><div><section><header>
+      <p class="mono_head">Rules</p>
+      <div> 
+        2. Any live cell with two or three live neighbours lives on to the next generation.
+        <table border=1 class="conway">
+          <tr> <td></td> <td></td> <td></td> </tr>
+          <tr> <td></td> <td class="live"></td> <td></td> </tr>
+          <tr> <td></td> <td></td> <td></td> </tr>
+        </table>
+      </div>
+   </header></section></div></div>
+
+  <div class="slide" id="z-4-rules-3a"><div><section><header>
+      <p class="mono_head">Rules</p>
+      <div> 
+        3. Any live cell with more than three live neighbours dies, as if by overcrowding.
+        <table border=1 class="conway">
+          <tr> <td></td> <td class="live"></td> <td></td> </tr>
+          <tr> <td class="live"></td> <td class="live"></td> <td class="live"></td> </tr>
+          <tr> <td></td> <td class="live"></td> <td></td> </tr>
+        </table>
+      </div>
+   </header></section></div></div>
+  <div class="slide" id="z-4-rules-3b"><div><section><header>
+      <p class="mono_head">Rules</p>
+      <div> 
+        3. Any live cell with more than three live neighbours dies, as if by overcrowding.
+        <table border=1 class="conway">
+          <tr> <td></td> <td class="live"></td> <td></td> </tr>
+          <tr> <td class="live"></td> <td></td> <td class="live"></td> </tr>
+          <tr> <td></td> <td class="live"></td> <td></td> </tr>
+        </table>
+      </div>
+   </header></section></div></div>
+
+  <div class="slide" id="z-4-rules-4a"><div><section><header>
+      <p class="mono_head">Rules</p>
+      <div> 
+        4. Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction. 
+        <table border=1 class="conway">
+          <tr> <td class="live"></td> <td></td> <td></td> </tr>
+          <tr> <td></td> <td></td> <td></td> </tr>
+          <tr> <td class="live"></td> <td></td> <td class="live"></td> </tr>
+        </table>
+      </div>
+   </header></section></div></div>
+  <div class="slide" id="z-4-rules-4b"><div><section><header>
+      <p class="mono_head">Rules</p>
+      <div> 
+        4. Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction. 
+        <table border=1 class="conway">
+          <tr> <td></td> <td></td> <td></td> </tr>
+          <tr> <td></td> <td class="live"></td> <td></td> </tr>
+          <tr> <td></td> <td></td> <td></td> </tr>
+        </table>
+      </div>
+   </header></section></div></div>
+
+  <div class="slide" id="z-5-simpledesign"><div class="heading_with_text"><section><header>
+      <h2>Rules of simple design</h2>
+      <ol>
+        <li>Runs all the tests</li>
+        <li>Contains no duplications</li>
+        <li>Expresses the intent of the programmers</li>
+        <li>Has no superfluous parts</li>
+      </ol>
+   </header></section></div></div>
+
 
 	<script src="script.js"></script>	
 </body>
