@@ -9,8 +9,6 @@
 	<link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
 	<style>
 	    body {font-family: 'Rambla', sans-serif; text-align: center;}
-
-
       h1,h2,h3,h4,strong { color: rgba(255, 92, 0, 0.59); }
       h1 { font-size: 4em; } 
       h2 { font-size: 2em; margin-top: 0; } 
@@ -31,224 +29,348 @@
       table tr td { padding: 1em; }
       table tr td.live { background-color: black; }
 	</style>
-
 </head>
+
 <body class="list">
-	<header class="caption"><h1>Code Retreat</h1><p>Joe Wright</p></header>
-	
-  <div class="slide" id="talkstart"><div class="heading"><section><header><h1>Code Retreat</h1><p style="text-align: left">Joe Wright &amp; John Gallagher</p></header></section></div></div>
+<header class="caption">
+  <h1>Code Retreat</h1>
+  <p>Joe Wright</p>
+</header>
 
-  <div class="slide" id="z-1-schedule"><div><section><header>
-      <h4>Schedule</h4>
-      <div class="mono"> 
-      <p>  10.00 - 10.15am: Arrival, Introduction
-      <br/>
-      <br/>10.15 - 11.00am: Session #1
-      <br/>11.15 - 12.00am: Session #2
-      <br/>12.15 - 01.00pm: Session #3
-      <br/>
-      <br/>01.00 - 02.00pm: Lunch
-      <br/>
-      <br/>02.00 - 02.45pm: Session #4
-      <br/>03.00 - 03.45pm: Session #5
-      <br/>04.00 - 04.45pm: Session #6
-      <br/>
-      <br/>04.45 - 05.00pm: Closing circle
-      </p>
-      </div>
-   </header></section></div></div>
+<div class="slide" id="talkstart">
+  <div class="heading">
+    <section>
+      <header>
+        <h1>Code Retreat</h1>
+        <p style="text-align: left">Joe Wright &amp; John Gallagher</p>
+      </header>
+    </section>
+  </div>
+</div>
 
-  <div class="slide" id="z-2-today"><div class="heading_with_text"><section><header>
-      <h2>Today</h2>
-      <p>The point of a <strong>code retreat</strong> is <strong>not</strong> to make progress on the problem.</p>
-      <p>The point is to <strong>experiment</strong> without pressure, and write <strong>good code</strong>!</p>
-   </header></section></div></div>
-  <div class="slide" id="z-2aa-format"><div class="heading_with_text"><section><header>
-      <h2>Format of each session</h2>
-      <ol>
-        <li>45 minutes coding</li>
-        <li>10 minutes retrospective</li>
-        <li>5 minutes break</li>
-      </ol>
-   </header></section></div></div>
+<div class="slide" id="z-1-schedule">
+  <div>
+    <section>
+      <header>
+        <h4>Schedule</h4>
+        <div class="mono">
+          <p>10.00 - 10.15am: Arrival, Introduction 
+          <br />
+          <br />10.15 - 11.00am: Session #1 
+          <br />11.15 - 12.00am: Session #2 
+          <br />12.15 - 01.00pm: Session #3 
+          <br />
+          <br />01.00 - 02.00pm: Lunch 
+          <br />
+          <br />02.00 - 02.45pm: Session #4 
+          <br />03.00 - 03.45pm: Session #5 
+          <br />04.00 - 04.45pm: Session #6 
+          <br />
+          <br />04.45 - 05.00pm: Closing circle</p>
+        </div>
+      </header>
+    </section>
+  </div>
+</div>
 
-  <div class="slide" id="z-2aa-deleteme"><div class="heading"><section><header>
-      <p style="padding-top: 5em;">Delete the code after each session</p>
-   </header></section></div></div>
+<div class="slide" id="z-2-today">
+  <div class="heading_with_text">
+    <section>
+      <header>
+        <h2>Today</h2>
+        <p>The point of a 
+        <strong>code retreat</strong>is 
+        <strong>not</strong>to make progress on the problem.</p>
+        <p>The point is to 
+        <strong>experiment</strong>without pressure, and write 
+        <strong>good code</strong>!</p>
+      </header>
+    </section>
+  </div>
+</div>
 
-  <div class="slide" id="z-2a-session1"><div class="heading"><section><header>
-      <h2 class="session">Session #1</h2> <p>Get to know the problem</p>
-   </header></section></div></div>
+<div class="slide" id="z-2aa-format">
+  <div class="heading_with_text">
+    <section>
+      <header>
+        <h2>Format of each session</h2>
+        <ol>
+          <li>45 minutes coding</li>
+          <li>10 minutes retrospective</li>
+          <li>5 minutes break</li>
+        </ol>
+      </header>
+    </section>
+  </div>
+</div>
 
-   <div class="slide cover" id="z-3-conways"><div class="heading"><section><header><h2 style="color: white; padding-top: 1.5em">Conway's Game of Life</h2><img src="conway.gif" style="background-color: white" alt=""></header></section></div></div>
+<div class="slide" id="z-2aa-deleteme">
+  <div class="heading">
+    <section>
+      <header>
+        <p style="padding-top: 5em;">Delete the code after each session</p>
+      </header>
+    </section>
+  </div>
+</div>
 
-  <div class="slide" id="z-4-rules-1a"><div><section><header>
-      <h4>Rules</h4>
-      <div> 
-        1. Any live cell with fewer than two live neighbours dies, as if caused by under-population.
-        <table border=1 class="conway">
-          <tr> <td></td> <td></td> <td></td> </tr>
-          <tr> <td></td> <td class="live"></td> <td></td> </tr>
-          <tr> <td></td> <td></td> <td></td> </tr>
-        </table>
-      </div>
-   </header></section></div></div>
-  <div class="slide" id="z-4-rules-1b"><div><section><header>
-      <h4>Rules</h4>
-      <div> 
-        1. Any live cell with fewer than two live neighbours dies, as if caused by under-population.
-        <table border=1 class="conway">
-          <tr> <td></td> <td></td> <td></td> </tr>
-          <tr> <td></td> <td></td> <td></td> </tr>
-          <tr> <td></td> <td></td> <td></td> </tr>
-        </table>
-      </div>
-   </header></section></div></div>
+<div class="slide" id="z-2a-session1">
+  <div class="heading">
+    <section>
+      <header>
+        <h2 class="session">Session #1</h2>
+        <p>Get to know the problem</p>
+      </header>
+    </section>
+  </div>
+</div>
 
-  <div class="slide" id="z-4-rules-2a"><div><section><header>
-      <h4>Rules</h4>
-      <div> 
-        2. Any live cell with two or three live neighbours lives on to the next generation.
-        <table border=1 class="conway">
-          <tr> <td class="live"></td> <td></td> <td></td> </tr>
-          <tr> <td></td> <td class="live"></td> <td></td> </tr>
-          <tr> <td class="live"></td> <td></td> <td></td> </tr>
-        </table>
-      </div>
-   </header></section></div></div>
-  <div class="slide" id="z-4-rules-2b"><div><section><header>
-      <h4>Rules</h4>
-      <div> 
-        2. Any live cell with two or three live neighbours lives on to the next generation.
-        <table border=1 class="conway">
-          <tr> <td></td> <td></td> <td></td> </tr>
-          <tr> <td></td> <td class="live"></td> <td></td> </tr>
-          <tr> <td></td> <td></td> <td></td> </tr>
-        </table>
-      </div>
-   </header></section></div></div>
 
-  <div class="slide" id="z-4-rules-3a"><div><section><header>
-      <h4>Rules</h4>
-      <div> 
-        3. Any live cell with more than three live neighbours dies, as if by overcrowding.
-        <table border=1 class="conway">
-          <tr> <td></td> <td class="live"></td> <td></td> </tr>
-          <tr> <td class="live"></td> <td class="live"></td> <td class="live"></td> </tr>
-          <tr> <td></td> <td class="live"></td> <td></td> </tr>
-        </table>
-      </div>
-   </header></section></div></div>
-  <div class="slide" id="z-4-rules-3b"><div><section><header>
-      <h4>Rules</h4>
-      <div> 
-        3. Any live cell with more than three live neighbours dies, as if by overcrowding.
-        <table border=1 class="conway">
-          <tr> <td></td> <td class="live"></td> <td></td> </tr>
-          <tr> <td class="live"></td> <td></td> <td class="live"></td> </tr>
-          <tr> <td></td> <td class="live"></td> <td></td> </tr>
-        </table>
-      </div>
-   </header></section></div></div>
+<div class="slide" id="z-4-rules-1a">
+  <div>
+    <section>
+      <header>
+        <h4>Rules</h4>
+        <div>1. Any live cell with fewer than two live neighbours dies, as if caused by under-population. 
+          <table border="1" class="conway">
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="live"></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+        </table></div>
+      </header>
+    </section>
+  </div>
+</div>
+<div class="slide" id="z-4-rules-1b">
+  <div>
+    <section>
+      <header>
+        <h4>Rules</h4>
+        <div>1. Any live cell with fewer than two live neighbours dies, as if caused by under-population. 
+          <table border="1" class="conway">
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+        </table></div>
+      </header>
+    </section>
+  </div>
+</div>
 
-  <div class="slide" id="z-4-rules-4a"><div><section><header>
-      <h4>Rules</h4>
-      <div> 
-        4. Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction. 
-        <table border=1 class="conway">
-          <tr> <td class="live"></td> <td></td> <td></td> </tr>
-          <tr> <td></td> <td></td> <td></td> </tr>
-          <tr> <td class="live"></td> <td></td> <td class="live"></td> </tr>
-        </table>
-      </div>
-   </header></section></div></div>
-  <div class="slide" id="z-4-rules-4b"><div><section><header>
-      <h4>Rules</h4>
-      <div> 
-        4. Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction. 
-        <table border=1 class="conway">
-          <tr> <td></td> <td></td> <td></td> </tr>
-          <tr> <td></td> <td class="live"></td> <td></td> </tr>
-          <tr> <td></td> <td></td> <td></td> </tr>
-        </table>
-      </div>
-   </header></section></div></div>
+<div class="slide" id="z-4-rules-2a">
+  <div>
+    <section>
+      <header>
+        <h4>Rules</h4>
+        <div>2. Any live cell with two or three live neighbours lives on to the next generation. 
+          <table border="1" class="conway">
+            <tr>
+              <td class="live"></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="live"></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="live"></td>
+              <td></td>
+              <td></td>
+            </tr>
+        </table></div>
+      </header>
+    </section>
+  </div>
+</div>
 
-  <div class="slide" id="z-5a-rulesrecap"><div class="heading_with_text"><section><header>
-      <h2>Conway's Game of Life</h2>
-      <ol>
-        <li>Any <strong>live</strong> cell with <strong>fewer than two</strong> live neighbours dies, as if caused by under-population.</li>
-        <li>Any <strong>live</strong> cell with <strong>two or three</strong> live neighbours lives on to the next generation.</li>
-        <li>Any <strong>live</strong> cell with <strong>more than three</strong> live neighbours dies, as if by overcrowding</li>
-        <li>Any <strong>dead</strong> cell with <strong>exactly three</strong> live neighbours becomes a live cell, as if by reproduction</li>
-      </ol>
-   </header></section></div></div>
+<div class="slide" id="z-4-rules-2b">
+  <div>
+    <section>
+      <header>
+        <h4>Rules</h4>
+        <div>2. Any live cell with two or three live neighbours lives on to the next generation. 
+          <table border="1" class="conway">
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="live"></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+        </table></div>
+      </header>
+    </section>
+  </div>
+</div>
 
-  <div class="slide" id="z-6a-session2"><div class="heading"><section><header>
-      <h2 class="session">Session #2</h2> <p>Ping-Pong TDD</p>
-   </header></section></div></div>
-   <div class="slide cover" id="z-6b-tdd"><div class="heading"><section><header><img src="red-green-refactor.png" style="background-color: white" alt=""></header></section></div></div>
-  <div class="slide" id="z-6c-pingpong"><div class="heading_with_text"><section><header>
-      <h2>Ping-Pong Programming</h2>
-      <ol>
-          <li>Joe writes a new test and sees that it fails</li>
-          <li>John implements the code needed to pass the test</li>
-          <li>Joe writes the next test and sees that it fails</li>
-          <li>John implements the code needed to pass the test</li>
-      </ol>
-   </header></section></div></div>
+<div class="slide" id="z-4-rules-3a">
+  <div>
+    <section>
+      <header>
+        <h4>Rules</h4>
+        <div>3. Any live cell with more than three live neighbours dies, as if by overcrowding. 
+          <table border="1" class="conway">
+            <tr>
+              <td></td>
+              <td class="live"></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="live"></td>
+              <td class="live"></td>
+              <td class="live"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="live"></td>
+              <td></td>
+            </tr>
+        </table></div>
+      </header>
+    </section>
+  </div>
+</div>
+<div class="slide" id="z-4-rules-3b">
+  <div>
+    <section>
+      <header>
+        <h4>Rules</h4>
+        <div>3. Any live cell with more than three live neighbours dies, as if by overcrowding. 
+          <table border="1" class="conway">
+            <tr>
+              <td></td>
+              <td class="live"></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="live"></td>
+              <td></td>
+              <td class="live"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="live"></td>
+              <td></td>
+            </tr>
+        </table></div>
+      </header>
+    </section>
+  </div>
+</div>
 
-  <div class="slide" id="z-7a-session3"><div class="heading"><section><header> <h2 class="session">Session #3</h2> <p>Extreme Normal Form</p>
-   </header></section></div></div>
-  <div class="slide" id="z-7b-explanation"><div class="heading_with_text"><section><header>
-      <h2>Extreme Normal Form</h2>
-      <ol>
-        <li>The code should work</li>
-        <li>No bad names</li>
-        <li>No duplication of code, concepts, ideas</li>
-        <li>No redundant code - as simple as possible</li>
-      </ol>
-   </header></section></div></div>
+<div class="slide" id="z-4-rules-4a">
+  <div>
+    <section>
+      <header>
+        <h4>Rules</h4>
+        <div>4. Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction. 
+          <table border="1" class="conway">
+            <tr>
+              <td class="live"></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="live"></td>
+              <td></td>
+              <td class="live"></td>
+            </tr>
+        </table></div>
+      </header>
+    </section>
+  </div>
+</div>
+<div class="slide" id="z-4-rules-4b">
+  <div>
+    <section>
+      <header>
+        <h4>Rules</h4>
+        <div>4. Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction. 
+          <table border="1" class="conway">
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="live"></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+        </table></div>
+      </header>
+    </section>
+  </div>
+</div>
 
-  <div class="slide" id="z-7c"><div class="heading"><section><header>
-                  <h1>Lunch</h1> 
-   </header></section></div></div>
-   
-  <div class="slide" id="z-8a-session4"><div class="heading"><section><header>
-      <h2 class="session">Session #4</h2> <p>Mute Programmers</p>
-   </header></section></div></div>
-  <div class="slide" id="z-8b-explanation"><div class="heading_with_text"><section><header>
-      <h2>Mute Programmer</h2>
-      <ul>
-        <li><strong>Ping-pong</strong> - one person writes the tests, the other person writes the implementation code</li>
-        <li><strong>Mute</strong> - nobody can talk</li>
-      </ul>
-   </header></section></div></div>
+<div class="slide" id="z-5a-rulesrecap">
+  <div class="heading_with_text">
+    <section>
+      <header>
+        <h2>Conway's Game of Life</h2>
+        <ol>
+          <li>Any 
+          <strong>live</strong>cell with 
+          <strong>fewer than two</strong>live neighbours dies, as if caused by under-population.</li>
+          <li>Any 
+          <strong>live</strong>cell with 
+          <strong>two or three</strong>live neighbours lives on to the next generation.</li>
+          <li>Any 
+          <strong>live</strong>cell with 
+          <strong>more than three</strong>live neighbours dies, as if by overcrowding</li>
+          <li>Any 
+          <strong>dead</strong>cell with 
+          <strong>exactly three</strong>live neighbours becomes a live cell, as if by reproduction</li>
+        </ol>
+      </header>
+    </section>
+  </div>
+</div>
 
-  <div class="slide" id="z-9a-session5"><div class="heading"><section><header>
-      <h2 class="session">Session #5</h2> <p>Object Orientated principles</p>
-   </header></section></div></div>
-  <div class="slide" id="z-9b-explanation"><div class="heading_with_text"><section><header>
-                  <p style="padding-top: 3em;">Minimal Booleans</p>
-      <p >Primitive Obsession</p>
-   </header></section></div></div>
-
-  <div class="slide" id="z-10a-session6"><div class="heading"><section><header>
-      <h2 class="session">Session #6</h2> <p>Freestyle</p>
-   </header></section></div></div>
-  <div class="slide" id="z-10b-explanation"><div class="heading_with_text"><section><header>
-      <h2>Freestyle</h2>
-      <ul>
-        <li>Use a different language</li>
-        <li>No conditionals (no if / else)</li>
-        <li>Use only one level of indentation per method</li>
-        <li>Don’t use any getters/setters/properties</li>
-        <li>Use only one dot per line</li>
-        <li>Max 3 lines per method</li>
-        <li>Evil programmer</li>
-      </ul>
-   </header></section></div></div>
-
-	<script src="script.js"></script>	
+<script src="script.js"></script>	
 </body>
 </html>
